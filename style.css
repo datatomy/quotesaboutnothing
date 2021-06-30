@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Acme', sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 50px);
+}
+
+.logo {
+    margin: 30px;
+    width: 260px;
+}
+
+#clickFirstTime {
+    text-align: center;
+    
+}
+
+.quote-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-data {
+    border: 3px solid #e30922;
+    background: #fcd720;
+    border-radius: 3px;
+    margin: 0px 30px 30px 30px;
+    padding: 10px;
+    max-width: 600px;
+    min-width: 260px;
+    box-shadow: 0px 4px 2px black;
+}
+
+.quote-text, .quote-author {
+    background: #fcd720;
+    color: black;
+    margin-bottom: 4px;
+}
+
+.quote-text {
+    font-weight: 300;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.quote-author {
+    text-align: end;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 260px;
+    min-width: 260px;
+    margin: 0px 30px 30px 30px;
+    width: calc(100% - 60px);
+}
+
+.buttons {
+    background: #fcd720;
+    color: black;
+    border: 3px solid #e30922;
+    border-radius: 3px;
+    box-shadow: 0px 4px 2px black;
+    padding: 10px;
+    width: 120px;
+    font-size: 1rem;
+}
+
+#new-twitt {
+    margin-right: 20px;
+}
+
+.character-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.character-img {
+    width: 100px;
+    display: none;
+}
+
+footer {
+    text-align: center;
+    color: black;
+}
