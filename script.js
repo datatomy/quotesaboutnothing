@@ -39,26 +39,31 @@ let idJerry = document.getElementById('jerry-seinfeld');
 let idGeorge = document.getElementById('george-constanza');
 let idKramer = document.getElementById('kramer');
 let idElaine = document.getElementById('elaine-benes');
+let idAllCh = document.getElementById('all-characters');
 
 if (allQuotes[index].author == "Jerry Seinfeld") {
     idGeorge.style.display = 'none';
     idKramer.style.display = 'none';
     idElaine.style.display = 'none';
+    idAllCh.style.display = 'none';
     idJerry.style.display = 'block';
 } else if (allQuotes[index].author == "George Constanza") {
     idJerry.style.display = 'none';
     idKramer.style.display = 'none';
     idElaine.style.display = 'none';
+    idAllCh.style.display = 'none';
     idGeorge.style.display = 'block';
 } else if (allQuotes[index].author == "Kramer") {
     idJerry.style.display = 'none';
     idElaine.style.display = 'none';
     idGeorge.style.display = 'none';
+    idAllCh.style.display = 'none';
     idKramer.style.display = 'block';
 } else if (allQuotes[index].author == "Elaine Benes") {
     idJerry.style.display = 'none';
     idGeorge.style.display = 'none';
     idKramer.style.display = 'none';
+    idAllCh.style.display = 'none';
     idElaine.style.display = 'block';
 }
 
