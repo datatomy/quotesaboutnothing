@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
 
 :root {
-    --border: 3px solid #d61f29;
-    --shadow: 0px 2px 2px black;;
-    --background: #fbd628;
-    --background-color: #fbd628;
+    --main-color: #d61f29;
+    --border: 3px solid var(--main-color);
+    --shadow: 5px 5px .1px black;
+    --background: #FBD633;
+    --background-color: transparent;
     --color: black;
 }
 
@@ -12,11 +13,18 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Acme', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
 }
 
 body {
-    background-color: var(--background);
+    background: #ffffff;
+    background: radial-gradient(circle, #ffffff 0%, var(--background) 50%);
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
 }
 
 main {
@@ -24,12 +32,17 @@ main {
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    height: calc(100vh - 33px);
+    height: 100vh;
 }
 
 .logo {
-    margin: 30px;
-    width: 260px;
+    margin: 30px 10px;
+    width: 300px;
+    display: none;
+}
+
+#logo-start {
+    display: block;
 }
 
 #clickFirstTime {
@@ -46,7 +59,7 @@ main {
 .quote-data {
     border: var(--border);
     background: var(--background-color);
-    border-radius: 3px;
+    border-radius: 0px;
     margin: 0px 30px 30px 30px;
     padding: 10px;
     max-width: 600px;
@@ -87,7 +100,7 @@ main {
     background: var(--background-color);
     color: var(--color);
     border: var(--border);
-    border-radius: 3px;
+    border-radius: 0px;
     box-shadow: var(--shadow);
     padding: 10px;
     width: 120px;
@@ -95,7 +108,7 @@ main {
 }
 
 
-#new-twitt {
+#new-tweet {
     margin-right: 20px;
 }
 
@@ -106,13 +119,13 @@ main {
 }
 
 .character-img {
-    width: 100px;
+    width: 120px;
     display: none;
 }
 
 #all-characters {
     display: block;
-    width: 260px;
+    width: 300px;
 }
 
 .footer {
@@ -121,4 +134,9 @@ main {
     padding: 5px;
     color: var(--color);
     min-width: 260px;
+}
+
+.datatomy {
+    text-decoration: none;
+    color: var(--main-color);
 }
