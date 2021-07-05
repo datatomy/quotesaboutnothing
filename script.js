@@ -58,29 +58,146 @@ let idSeason7 = document.getElementById('logo-7')
 let idSeason8 = document.getElementById('logo-8')
 let idSeason9 = document.getElementById('logo-9')
 let root = document.documentElement;
-///root.style.setProperty('--background', 'red');
 
 
-///season12 /// --main-color: #e30922; --background: #fcd720;
-///season3 /// --background: #fcc805; --main-color: #0495f7; 
-///season4 /// --main-color: black;
-    // --border: 3px solid var(--main-color);
-    // --shadow: 5px 5px .1px #4004c8;
-    // --background: #cbcacc;
-    // --background-color: #cbcacc;
-    // --color: black;
-///season5 /// --main-color: #1853fe; --shadow: 5px 5px .1px #534c54; --background: #e2e0e2;
-///season6 /// --main-color: #001ea0; --shadow: 5px 5px .1px #009a18; --background: #66fd92;
+    /// Functions to display styles.
+function displaySeason12() {
+    idStart.style.display = 'none';
+    idSeason3.style.display = 'none';
+    idSeason4.style.display = 'none';
+    idSeason5.style.display = 'none';
+    idSeason6.style.display = 'none';
+    idSeason7.style.display = 'none';
+    idSeason8.style.display = 'none';
+    idSeason9.style.display = 'none';
+    idSeason12.style.display = 'block';
+    root.style.setProperty('--main-color', '#e30922');
+    root.style.setProperty('--background', '#fcd720');
+    root.style.setProperty('--shadow', '5px 5px .1px black');
+}
 
+function displaySeason3() {
+    idStart.style.display = 'none';
+    idSeason4.style.display = 'none';
+    idSeason5.style.display = 'none';
+    idSeason6.style.display = 'none';
+    idSeason7.style.display = 'none';
+    idSeason8.style.display = 'none';
+    idSeason9.style.display = 'none';
+    idSeason12.style.display = 'none';
+    idSeason3.style.display = 'block';
+    root.style.setProperty('--main-color', '#e93f33');
+    root.style.setProperty('--background', '#2d97fb');
+    root.style.setProperty('--shadow', '5px 5px .1px #060606');
+}
 
+function displaySeason4() {
+    idStart.style.display = 'none';
+    idSeason3.style.display = 'none';
+    idSeason5.style.display = 'none';
+    idSeason6.style.display = 'none';
+    idSeason7.style.display = 'none';
+    idSeason8.style.display = 'none';
+    idSeason9.style.display = 'none';
+    idSeason12.style.display = 'none';
+    idSeason4.style.display = 'block';
+    root.style.setProperty('--main-color', '#fad34c');
+    root.style.setProperty('--background', '#cbcacc');
+    root.style.setProperty('--shadow', '5px 5px .1px #473bc7');
+}
 
+function displaySeason5() {
+    idStart.style.display = 'none';
+    idSeason3.style.display = 'none';
+    idSeason4.style.display = 'none';
+    idSeason6.style.display = 'none';
+    idSeason7.style.display = 'none';
+    idSeason8.style.display = 'none';
+    idSeason9.style.display = 'none';
+    idSeason12.style.display = 'none';
+    idSeason5.style.display = 'block';
+    root.style.setProperty('--main-color', '#1853fe');
+    root.style.setProperty('--background', '#e2e0e2');
+    root.style.setProperty('--shadow', '5px 5px .1px #534c54');
+}
 
+function displaySeason6() {
+    idStart.style.display = 'none';
+    idSeason3.style.display = 'none';
+    idSeason4.style.display = 'none';
+    idSeason5.style.display = 'none';
+    idSeason7.style.display = 'none';
+    idSeason8.style.display = 'none';
+    idSeason9.style.display = 'none';
+    idSeason12.style.display = 'none';
+    idSeason6.style.display = 'block';
+    root.style.setProperty('--main-color', '#001ea0');
+    root.style.setProperty('--background', '#66fd92');
+    root.style.setProperty('--shadow', '5px 5px .1px #009a18');
+}
 
+function displaySeason7() {
+    idStart.style.display = 'none';
+    idSeason3.style.display = 'none';
+    idSeason4.style.display = 'none';
+    idSeason5.style.display = 'none';
+    idSeason6.style.display = 'none';
+    idSeason8.style.display = 'none';
+    idSeason9.style.display = 'none';
+    idSeason12.style.display = 'none';
+    idSeason7.style.display = 'block';
+    root.style.setProperty('--main-color', '#f4f62e');
+    root.style.setProperty('--background', '#7a5451');
+    root.style.setProperty('--shadow', '5px 5px .1px #21481f');
+}
 
+function displaySeason8() {
+    idStart.style.display = 'none';
+    idSeason3.style.display = 'none';
+    idSeason4.style.display = 'none';
+    idSeason5.style.display = 'none';
+    idSeason6.style.display = 'none';
+    idSeason7.style.display = 'none';
+    idSeason9.style.display = 'none';
+    idSeason12.style.display = 'none';
+    idSeason8.style.display = 'block';
+    root.style.setProperty('--main-color', '#2686fb');
+    root.style.setProperty('--background', '#b0aeb1');
+    root.style.setProperty('--shadow', '5px 5px .1px #020102');
+}
 
+function displaySeason9() {
+    idStart.style.display = 'none';
+    idSeason3.style.display = 'none';
+    idSeason4.style.display = 'none';
+    idSeason5.style.display = 'none';
+    idSeason6.style.display = 'none';
+    idSeason7.style.display = 'none';
+    idSeason8.style.display = 'none';
+    idSeason12.style.display = 'none';
+    idSeason9.style.display = 'block';
+    root.style.setProperty('--main-color', '#469166');
+    root.style.setProperty('--background', '#8282a8');
+    root.style.setProperty('--shadow', '5px 5px .1px #020102');
+}
 
-
-
+if (allQuotes[index].season == 1 || allQuotes[index].season == 2) {
+    displaySeason12();
+} else if (allQuotes[index].season == 3) {
+    displaySeason3();
+} else if (allQuotes[index].season == 4) {
+    displaySeason4();
+} else if (allQuotes[index].season == 5) {
+    displaySeason5();
+} else if (allQuotes[index].season == 6) {
+    displaySeason6();
+} else if (allQuotes[index].season == 7) {
+    displaySeason7();
+} else if (allQuotes[index].season == 8) {
+    displaySeason8();
+} else if (allQuotes[index].season == 9) {
+    displaySeason9();
+}
 
 
 /// Change the img of the characters.
@@ -135,6 +252,7 @@ if (allQuotes[index].author == "Jerry Seinfeld") {
 
 /// Twitter button.
 let newTweetButton = document.getElementById("new-tweet");
+newTweetButton.style.display = 'block';
 let tweetUrl = `https://twitter.com/intent/tweet?text=${pushQuote}%20${pushAuthor}%20#seinfeld`;
 newTweetButton.addEventListener('click', function() {
     window.open(`${tweetUrl}`, `_blank`);

@@ -5,7 +5,7 @@
     --border: 3px solid var(--main-color);
     --shadow: 5px 5px .1px black;
     --background: #FBD633;
-    --background-color: transparent;
+    --background-color: white;
     --color: black;
 }
 
@@ -17,9 +17,7 @@
 }
 
 body {
-    background: #ffffff;
-    background: radial-gradient(circle, #ffffff 0%, var(--background) 50%);
-    background-repeat: repeat;
+    background: var(--background);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -110,6 +108,7 @@ main {
 
 #new-tweet {
     margin-right: 20px;
+    display: none;
 }
 
 .character-container {
