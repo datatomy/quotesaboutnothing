@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
 
+html {
+    transition: all 3s 3s;
+}
+
 :root {
     --main-color: #d61f29;
     --border: 3px solid var(--main-color);
@@ -105,7 +109,6 @@ main {
     font-size: 1rem;
 }
 
-
 #new-tweet {
     margin-right: 20px;
     display: none;
@@ -138,4 +141,50 @@ main {
 .datatomy {
     text-decoration: none;
     color: var(--main-color);
+}
+
+@media (min-width: 768px) {
+    
+    .logo {
+        width: 400px;
+    }
+
+    .quote-data {
+        min-width: 360px;
+    }
+
+    .quote-text {
+        font-weight: 400;
+        font-size: 1.7rem;
+    }
+
+    .quote-author {
+        font-weight: 700;
+        font-size: 19px;
+    }
+
+    .buttons-container {
+        max-width: 300px;
+        min-width: 300px;
+        width: calc(100% - 60px);
+    }
+
+    .buttons {
+        width: 150px;
+        font-size: 1.3rem;
+    }
+
+    .character-img {
+        width: 130px;
+    }
+
+    #all-characters {
+        width: 350px;
+    }
+
+    .footer {
+        font-size: 15px;
+        min-width: 300px;
+    }
+
 }

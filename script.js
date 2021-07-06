@@ -251,19 +251,43 @@ if (allQuotes[index].author == "Jerry Seinfeld") {
 
 
 /// Twitter button.
-let newTweetButton = document.getElementById("new-tweet");
 newTweetButton.style.display = 'block';
 let tweetUrl = `https://twitter.com/intent/tweet?text=${pushQuote}%20${pushAuthor}%20#seinfeld`;
 newTweetButton.addEventListener('click', function() {
     window.open(`${tweetUrl}`, `_blank`);
 });
 
-///End of displayQuote.
+/// End of displayQuote.
 }
 
 
+/// Buttons variables.
+let newQuoteButton = document.querySelector('#new-quote');
+let newTweetButton = document.getElementById("new-tweet");
+
+
 /// Press the button to get the quote.
-let btn = document.querySelector('#new-quote');
-btn.addEventListener('click', displayQuote);
+newQuoteButton.addEventListener('click', displayQuote);
+
+
+/// Hover effects.
+newQuoteButton.addEventListener("mouseenter", function( event ) {
+  event.target.style.color = "var(--background-color)";
+  event.target.style.backgroundColor = "var(--main-color)";
+});
+newQuoteButton.addEventListener("mouseleave", function( event ) {
+    event.target.style.color = "black";
+    event.target.style.backgroundColor = "white";
+});
+
+newTweetButton.addEventListener("mouseenter", function( event ) {
+    event.target.style.color = "var(--background-color)";
+    event.target.style.backgroundColor = "var(--main-color)";
+});
+newTweetButton.addEventListener("mouseleave", function( event ) {
+      event.target.style.color = "black";
+      event.target.style.backgroundColor = "white";
+});
+  
 
 
