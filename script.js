@@ -268,32 +268,3 @@ let newTweetButton = document.getElementById("new-tweet");
 
 /// Press the button to get the quote.
 newQuoteButton.addEventListener('click', displayQuote);
-
-
-/// Hover effects.
-    /// New Quote button.
-newQuoteButton.addEventListener("mouseenter", function( event ) {
-  event.target.style.color = "var(--background-color)";
-  event.target.style.backgroundColor = "var(--main-color)";
-  event.target.style.border = "3px solid white";
-});
-newQuoteButton.addEventListener("mouseleave", function( event ) {
-    event.target.style.color = "black";
-    event.target.style.backgroundColor = "white";
-    event.target.style.border = "3px solid var(--main-color)";
-});
-
-    /// Tweet button.
-newTweetButton.addEventListener("mouseenter", function( event ) {
-    event.target.style.color = "var(--background-color)";
-    event.target.style.backgroundColor = "var(--main-color)";
-    event.target.style.border = "3px solid white";
-});
-newTweetButton.addEventListener("mouseleave", function( event ) {
-      event.target.style.color = "black";
-      event.target.style.backgroundColor = "white";
-      event.target.style.border = "3px solid var(--main-color)";
-});
-  
-
-
