@@ -41,6 +41,8 @@ main {
 
 #logo-start {
     display: block;
+    -webkit-filter: drop-shadow(1px -1.5px 1px rgba(0,0,0,0.6));
+    filter: drop-shadow(1px -1.5px 1px rgba(0,0,0,0.6));
 }
 
 
