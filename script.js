@@ -1,17 +1,32 @@
-/// All Quotes Array of Objects.
-let allQuotes = [
-    { quote: 'Not that there`s anything wrong with it.', author: 'Jerry Seinfeld', season: 1, episode: 1 },
-    { quote: 'Are you still master of your domain?', author: 'George Constanza', season: 2, episode: 2 },
-    { quote: 'Hello, Newman!', author: 'Kramer', season: 3, episode: 3 },
-    { quote: 'You´re so good looking.', author: 'Elaine Benes', season: 4, episode: 4 },
-    { quote: 'Not that there`s anything wrong with it.', author: 'Jerry Seinfeld', season: 5, episode: 1 },
-    { quote: 'Are you still master of your domain?', author: 'George Constanza', season: 6, episode: 2 },
-    { quote: 'Hello, Newman!', author: 'Kramer', season: 7, episode: 3 },
-    { quote: 'You´re so good looking.', author: 'Elaine Benes', season: 8, episode: 4 },
-    { quote: 'You´re so good looking.', author: 'Elaine Benes', season: 9, episode: 4 }
-];
+/// Fades functions.
 
-/// Start of the main function of display Quote.
+function fadeIn(element,speed){
+    if(element.style.opacity !=1){
+        var speed = speed || 30 ;
+        var num = 0;
+        var st = setInterval(function(){
+        num++;
+        element.style.opacity = num/10;
+        if(num>=10)  {  clearInterval(st);  }
+        },speed);
+    }
+    element.style.opacity = 1;
+};
+function fadeOut(element,speed){
+    if(element.style.opacity !=0){
+        var speed = speed || 30 ;
+        var num = 10;
+        var st = setInterval(function(){
+        num--;
+        element.style.opacity = num / 10 ;
+        if(num<=0)  {   clearInterval(st);  }
+        },speed);
+    }
+
+};
+let main = document.getElementById('main');
+
+/// Function of display Quote.
 function displayQuote(){
 
 
@@ -257,6 +272,8 @@ newTweetButton.addEventListener('click', function() {
     window.open(`${tweetUrl}`, `_blank`);
 });
 
+setTimeout(fadeIn(main,6), 500);
+
 /// End of displayQuote.
 }
 
@@ -267,4 +284,11 @@ let newTweetButton = document.getElementById("new-tweet");
 
 
 /// Press the button to get the quote.
-newQuoteButton.addEventListener('click', displayQuote);
+
+function changeAll() {
+    setTimeout(fadeOut(main,50), 500);
+    setTimeout(displayQuote, 500);
+};
+
+newQuoteButton.addEventListener('click', changeAll);
+
